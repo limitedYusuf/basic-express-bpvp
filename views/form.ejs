@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Formulir Keamanan</title>
+   </head>
+
+   <body>
+      <h1>Formulir Keamanan</h1>
+      <form action="/submit" method="post">
+         <input type="text" name="username" placeholder="Username">
+         <input type="password" name="password" placeholder="Password">
+         <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+         <button type="submit">Submit</button>
+      </form>
+   </body>
+
+</html>
